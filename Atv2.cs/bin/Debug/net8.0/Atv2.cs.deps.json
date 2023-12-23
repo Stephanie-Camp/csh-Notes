@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "Atv2.cs/1.0.0": {
+        "runtime": {
+          "Atv2.cs.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Atv2.cs/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

@@ -1,0 +1,14 @@
+/home/bloo/aulas_CSharp/Atv1.cs/bin/Debug/net8.0/Atv1.cs
+/home/bloo/aulas_CSharp/Atv1.cs/bin/Debug/net8.0/Atv1.cs.deps.json
+/home/bloo/aulas_CSharp/Atv1.cs/bin/Debug/net8.0/Atv1.cs.runtimeconfig.json
+/home/bloo/aulas_CSharp/Atv1.cs/bin/Debug/net8.0/Atv1.cs.dll
+/home/bloo/aulas_CSharp/Atv1.cs/bin/Debug/net8.0/Atv1.cs.pdb
+/home/bloo/aulas_CSharp/Atv1.cs/obj/Debug/net8.0/Atv1.cs.GeneratedMSBuildEditorConfig.editorconfig
+/home/bloo/aulas_CSharp/Atv1.cs/obj/Debug/net8.0/Atv1.cs.AssemblyInfoInputs.cache
+/home/bloo/aulas_CSharp/Atv1.cs/obj/Debug/net8.0/Atv1.cs.AssemblyInfo.cs
+/home/bloo/aulas_CSharp/Atv1.cs/obj/Debug/net8.0/Atv1.cs.csproj.CoreCompileInputs.cache
+/home/bloo/aulas_CSharp/Atv1.cs/obj/Debug/net8.0/Atv1.cs.dll
+/home/bloo/aulas_CSharp/Atv1.cs/obj/Debug/net8.0/refint/Atv1.cs.dll
+/home/bloo/aulas_CSharp/Atv1.cs/obj/Debug/net8.0/Atv1.cs.pdb
+/home/bloo/aulas_CSharp/Atv1.cs/obj/Debug/net8.0/Atv1.cs.genruntimeconfig.cache
+/home/bloo/aulas_CSharp/Atv1.cs/obj/Debug/net8.0/ref/Atv1.cs.dll
