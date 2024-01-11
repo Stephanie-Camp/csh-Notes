@@ -1,0 +1,15 @@
+/home/bloo/csh-Notes/csharpAtvs/Atv7.cs/obj/Debug/net8.0/Atv7.cs.GeneratedMSBuildEditorConfig.editorconfig
+/home/bloo/csh-Notes/csharpAtvs/Atv7.cs/obj/Debug/net8.0/Atv7.cs.AssemblyInfoInputs.cache
+/home/bloo/csh-Notes/csharpAtvs/Atv7.cs/obj/Debug/net8.0/Atv7.cs.AssemblyInfo.cs
+/home/bloo/csh-Notes/csharpAtvs/Atv7.cs/obj/Debug/net8.0/Atv7.cs.csproj.CoreCompileInputs.cache
+/home/bloo/csh-Notes/csharpAtvs/Atv7.cs/obj/Debug/net8.0/Atv7.cs.sourcelink.json
+/home/bloo/csh-Notes/csharpAtvs/Atv7.cs/bin/Debug/net8.0/Atv7.cs
+/home/bloo/csh-Notes/csharpAtvs/Atv7.cs/bin/Debug/net8.0/Atv7.cs.deps.json
+/home/bloo/csh-Notes/csharpAtvs/Atv7.cs/bin/Debug/net8.0/Atv7.cs.runtimeconfig.json
+/home/bloo/csh-Notes/csharpAtvs/Atv7.cs/bin/Debug/net8.0/Atv7.cs.dll
+/home/bloo/csh-Notes/csharpAtvs/Atv7.cs/bin/Debug/net8.0/Atv7.cs.pdb
+/home/bloo/csh-Notes/csharpAtvs/Atv7.cs/obj/Debug/net8.0/Atv7.cs.dll
+/home/bloo/csh-Notes/csharpAtvs/Atv7.cs/obj/Debug/net8.0/refint/Atv7.cs.dll
+/home/bloo/csh-Notes/csharpAtvs/Atv7.cs/obj/Debug/net8.0/Atv7.cs.pdb
+/home/bloo/csh-Notes/csharpAtvs/Atv7.cs/obj/Debug/net8.0/Atv7.cs.genruntimeconfig.cache
+/home/bloo/csh-Notes/csharpAtvs/Atv7.cs/obj/Debug/net8.0/ref/Atv7.cs.dll
