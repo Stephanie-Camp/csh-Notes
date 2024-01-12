@@ -10,9 +10,9 @@ namespace Atv7{
             double[] t2 = new double[3];
 
             Console.WriteLine("Triangulo 1: \n");
-            double areaT1 = (raiz(P(t1), t1));  //calculo da raiz
+            double areaT1 = Raiz(P(t1), t1);  //calculo da raiz
             Console.WriteLine("\nTriangulo 2: \n");
-            double areaT2 = (raiz(P(t2), t2));  //calculo da raiz
+            double areaT2 = Raiz(P(t2), t2);  //calculo da raiz
 
             System.Console.WriteLine($"\nArea do triangulo 1: {areaT1.ToString("F2", CultureInfo.InvariantCulture)}" + 
             $"\nArea do triangulo 2: {areaT2.ToString("F2", CultureInfo.InvariantCulture)} \n{Area(areaT1, areaT2)}");         
@@ -27,7 +27,7 @@ namespace Atv7{
             }
             return (soma/2);
         }
-        static double raiz(double perimetro, double[] triangulo){ //parte interna da raiz
+        static double Raiz(double perimetro, double[] triangulo){ //parte interna da raiz
             double lado = 1;
             for(int i = 0; i < triangulo.Length; i++){ lado = (lado * (perimetro - triangulo[i])); }       //Console.WriteLine($"Medida de lado: {lado} ----- {lado*(perimetro - triangulo[i])}");
             lado = (perimetro * lado);
