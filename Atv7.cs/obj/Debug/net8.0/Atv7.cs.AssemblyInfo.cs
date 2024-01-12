@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Atv7.cs")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5c971c1da80895f8884072dce97927a5fb154215")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a9784acf618819457fe33abb78b193d5bfd5a634")]
 [assembly: System.Reflection.AssemblyProductAttribute("Atv7.cs")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Atv7.cs")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
