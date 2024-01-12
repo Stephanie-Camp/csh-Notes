@@ -11,8 +11,9 @@ namespace Atv7{
             Console.WriteLine("Triangulo 1: \n");
             double areaT1 = Math.Sqrt(Multiplicaçao(Perimetro(Medidas(t1)), t1));
             Console.WriteLine("\nTriangulo 2: \n");
-            double areaT2 = Math.Sqrt(Multiplicaçao(Perimetro(Medidas(t1)), t1));
-            System.Console.WriteLine($"\nArea do triangulo 1: {areaT1.ToString("F2", CultureInfo.InvariantCulture)} \nArea do triangulo 2: {areaT2.ToString("F2", CultureInfo.InvariantCulture)} \n{Area(areaT1, areaT2)}");         
+            double areaT2 = Math.Sqrt(Multiplicaçao(Perimetro(Medidas(t2)), t2));
+            System.Console.WriteLine($"\nArea do triangulo 1: {areaT1.ToString("F2", CultureInfo.InvariantCulture)})" + 
+            "(\nArea do triangulo 2: {areaT2.ToString("F2", CultureInfo.InvariantCulture)} \n{Area(areaT1, areaT2)}");         
         }
 
         static double Medidas(double[] triangulo){
@@ -24,9 +25,8 @@ namespace Atv7{
             }
             return soma;
         }
-        static double Perimetro(double soma){
-            double p = (soma/2);             //Console.Write($"PERIMETRO === {p} \n SOMA === {soma}");
-            return p;
+        static double Perimetro(double soma){   //Console.Write($"PERIMETRO === {p} \n SOMA === {soma}");
+            return (soma/2);
         }
         static double Multiplicaçao(double perimetro, double[] triangulo){
             double lado = 1;
