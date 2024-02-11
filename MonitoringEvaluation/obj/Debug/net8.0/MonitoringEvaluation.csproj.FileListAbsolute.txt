@@ -1,0 +1,15 @@
+/home/bloo/csh-Notes/csharpAtvs/MonitoringEvaluation/obj/Debug/net8.0/MonitoringEvaluation.GeneratedMSBuildEditorConfig.editorconfig
+/home/bloo/csh-Notes/csharpAtvs/MonitoringEvaluation/obj/Debug/net8.0/MonitoringEvaluation.AssemblyInfoInputs.cache
+/home/bloo/csh-Notes/csharpAtvs/MonitoringEvaluation/obj/Debug/net8.0/MonitoringEvaluation.AssemblyInfo.cs
+/home/bloo/csh-Notes/csharpAtvs/MonitoringEvaluation/obj/Debug/net8.0/MonitoringEvaluation.csproj.CoreCompileInputs.cache
+/home/bloo/csh-Notes/csharpAtvs/MonitoringEvaluation/obj/Debug/net8.0/MonitoringEvaluation.sourcelink.json
+/home/bloo/csh-Notes/csharpAtvs/MonitoringEvaluation/bin/Debug/net8.0/MonitoringEvaluation
+/home/bloo/csh-Notes/csharpAtvs/MonitoringEvaluation/bin/Debug/net8.0/MonitoringEvaluation.deps.json
+/home/bloo/csh-Notes/csharpAtvs/MonitoringEvaluation/bin/Debug/net8.0/MonitoringEvaluation.runtimeconfig.json
+/home/bloo/csh-Notes/csharpAtvs/MonitoringEvaluation/bin/Debug/net8.0/MonitoringEvaluation.dll
+/home/bloo/csh-Notes/csharpAtvs/MonitoringEvaluation/bin/Debug/net8.0/MonitoringEvaluation.pdb
+/home/bloo/csh-Notes/csharpAtvs/MonitoringEvaluation/obj/Debug/net8.0/MonitoringEvaluation.dll
+/home/bloo/csh-Notes/csharpAtvs/MonitoringEvaluation/obj/Debug/net8.0/refint/MonitoringEvaluation.dll
+/home/bloo/csh-Notes/csharpAtvs/MonitoringEvaluation/obj/Debug/net8.0/MonitoringEvaluation.pdb
+/home/bloo/csh-Notes/csharpAtvs/MonitoringEvaluation/obj/Debug/net8.0/MonitoringEvaluation.genruntimeconfig.cache
+/home/bloo/csh-Notes/csharpAtvs/MonitoringEvaluation/obj/Debug/net8.0/ref/MonitoringEvaluation.dll
