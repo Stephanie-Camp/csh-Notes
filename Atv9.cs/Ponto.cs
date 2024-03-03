@@ -1,5 +1,6 @@
 namespace Atv9 {
     class Ponto {
+        
         private int X;
         private int Y;
 
@@ -13,7 +14,7 @@ namespace Atv9 {
         }
 
         public void CoordenadaX(int pointX) {
-            X = pointX;
+            X = ++pointX;
         }
         public void CoordenadaXY(int pX, int pY){
             X = ++pX;
@@ -22,5 +23,6 @@ namespace Atv9 {
         public void ExibirPontos() {
             Console.WriteLine($"Pontos: ({X},{Y})");
         }
+
     }
 }
