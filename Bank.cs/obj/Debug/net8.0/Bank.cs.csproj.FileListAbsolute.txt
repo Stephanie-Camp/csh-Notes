@@ -1,0 +1,15 @@
+/home/bloo/csh-Notes/csharpAtvs/Bank.cs/obj/Debug/net8.0/Bank.cs.GeneratedMSBuildEditorConfig.editorconfig
+/home/bloo/csh-Notes/csharpAtvs/Bank.cs/obj/Debug/net8.0/Bank.cs.AssemblyInfoInputs.cache
+/home/bloo/csh-Notes/csharpAtvs/Bank.cs/obj/Debug/net8.0/Bank.cs.AssemblyInfo.cs
+/home/bloo/csh-Notes/csharpAtvs/Bank.cs/obj/Debug/net8.0/Bank.cs.csproj.CoreCompileInputs.cache
+/home/bloo/csh-Notes/csharpAtvs/Bank.cs/obj/Debug/net8.0/Bank.cs.sourcelink.json
+/home/bloo/csh-Notes/csharpAtvs/Bank.cs/bin/Debug/net8.0/Bank.cs
+/home/bloo/csh-Notes/csharpAtvs/Bank.cs/bin/Debug/net8.0/Bank.cs.deps.json
+/home/bloo/csh-Notes/csharpAtvs/Bank.cs/bin/Debug/net8.0/Bank.cs.runtimeconfig.json
+/home/bloo/csh-Notes/csharpAtvs/Bank.cs/bin/Debug/net8.0/Bank.cs.dll
+/home/bloo/csh-Notes/csharpAtvs/Bank.cs/bin/Debug/net8.0/Bank.cs.pdb
+/home/bloo/csh-Notes/csharpAtvs/Bank.cs/obj/Debug/net8.0/Bank.cs.dll
+/home/bloo/csh-Notes/csharpAtvs/Bank.cs/obj/Debug/net8.0/refint/Bank.cs.dll
+/home/bloo/csh-Notes/csharpAtvs/Bank.cs/obj/Debug/net8.0/Bank.cs.pdb
+/home/bloo/csh-Notes/csharpAtvs/Bank.cs/obj/Debug/net8.0/Bank.cs.genruntimeconfig.cache
+/home/bloo/csh-Notes/csharpAtvs/Bank.cs/obj/Debug/net8.0/ref/Bank.cs.dll
