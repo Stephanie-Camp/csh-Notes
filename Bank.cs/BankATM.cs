@@ -5,7 +5,6 @@ namespace Bank {
         private string Name;
         private string Agency;
         private string CurrentAcc;
-        private string Pass;
         static private List<string[]> DataList = new List<string[]> ();
         private Account addData;
         private EncryptPass pass;
@@ -23,7 +22,6 @@ namespace Bank {
             if (!(pass.GetPassword() == "0"))
                 DataList.Add([CurrentAcc, Agency, pass.GetPassword(), Cpf, Name, "0"]);
                 Console.WriteLine(AccountData());
-                Console.Write(ret());
 
             if (pass.GetPassword() == "0")
                 Console.WriteLine("\n Invalid password. \n Try Again.");
@@ -58,9 +56,6 @@ namespace Bank {
                 number[i] = (rnd.Next(0, 9));
             }
             return String.Join("", number);
-        }
-        public int ret(){
-            return DataList.Count;
         }
         public void Transfer(int amountAtt, string[] myDt) {
 
@@ -101,18 +96,20 @@ namespace Bank {
         }
         public string subTransation(int valueSub, string[] myDt) {
             int balance = 0;
-            if (ConfirmTransation() == true)
+
+            if (ConfirmTransation() == true) {
                 balance = int.Parse(myDt[5]) - valueSub;
                 return myDt[5] = (balance).ToString();
-
+            }
             return myDt[5];
         }
         public string addTransation(int valueSub, string[] myDt) {
             int balance = 0;
-            if (ConfirmTransation() == true)
-                balance = int.Parse(myDt[5]) + valueSub;
+
+            if (ConfirmTransation() == true) {
+                valueSub = int.Parse(myDt[5]) + valueSub;
                 return myDt[5] = (balance).ToString();
-            
+            }
             return myDt[5];
         }
         public bool ConfirmTransation() {
