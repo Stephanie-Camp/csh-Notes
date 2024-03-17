@@ -1,15 +1,14 @@
 namespace Bank {
     class Account {
 
-        private List<string[]> clientList = new List<string[]>() {};
         private string[] myDt = new string[] {};
         private int myStatement = 0;
+        private BankATM entryTransfer = new BankATM();
 
-        public Account(List<string[]> datas, string[] dtCli) { //construtor da classe
-            clientList = datas;
+        public Account(string[] dtCli) { //construtor da classe
             myDt = dtCli;
             myStatement = int.Parse(myDt[5]);
-
+            
             while (true) {
 
                 Console.WriteLine(@$" 
@@ -28,80 +27,63 @@ namespace Bank {
                 if (opc == 2)
                     Deposit();
                 if (opc == 3)
-                    Transfer();
+                    entryTransfer.Transfer(myStatement, myDt);
                 if (opc == 0)
                     break;
             }
         }
 
         private void Withdrawal() { //myDt - meus dados  myStatement - meu dinheiro clientList - BD
-            if (myStatement < 1) {
+            if (myStatement < 1)
                 Console.WriteLine("\n Invalid.");
-            } else {
+
+            if (!(myStatement < 1))
                 Console.Write("\n Write how much you wanna withdraw: ");
                 int value = int.Parse(Console.ReadLine());
                 
-                if (ConfirmTransation() == true && value > 0)
-                    myStatement = int.Parse(myDt[5]) - value;
-                    myDt[5] = (myStatement).ToString();
-            }
+                if (value > 0 && value < myStatement)
+                    subTransation(value);
 
         }
         private void Deposit() {
+
             Console.Write("\n Write how much you wanna deposit: ");
             myStatement = int.Parse(Console.ReadLine());
-            if (myStatement < 1 ) {
-                Console.WriteLine("\n Invalid. ") ;
 
-            } else {
-                if (ConfirmTransation() == true)
+            if (myStatement < 1 ) 
+                Console.WriteLine("\n Invalid. ");
+
+            if (!(myStatement < 1 ))
+                addTransation();
+        }
+
+        public void subTransation(int valueSub) {
+
+            if (ConfirmTransation() == true)
+                myStatement = int.Parse(myDt[5]) - valueSub;
+                myDt[5] = (myStatement).ToString();
+
+            if (!(ConfirmTransation() == true))
+                Console.WriteLine(" \n Operation canceled.");
+
+        }
+        public void addTransation() {
+
+            if (ConfirmTransation() == true)
                 myStatement = int.Parse(myDt[5]) + myStatement;
                 myDt[5] = (myStatement).ToString();
-            }
+
+            if (!(ConfirmTransation() == true))
+                Console.WriteLine(" \n Operation canceled.");
+
         }
-        private void Transfer() {
-            if (myStatement < 1 ) {
-                Console.WriteLine("\n Invalid. ") ;
-            } else {
+        public bool ConfirmTransation() {
 
-                Console.Write("Insert the account number to transfer: ");
-                string accTransfer = Console.ReadLine();
-                Console.Write("Insert the agency number to transfer: ");
-                string agTransfer = Console.ReadLine();
-
-                foreach (var data in clientList) {
-
-                    if (myDt[0] == accTransfer && myDt[1] == agTransfer) {
-                        Console.WriteLine("\n Account already exist");
-                        break;
-                    }
-
-                    if ((data[0] == accTransfer && data[1] == agTransfer) && (myDt[0] != accTransfer && myDt[1] != agTransfer)) {
-Console.WriteLine(@$"  
- ._____________________________.
- |   Account   |  {data[0]}          |
- |   Agency    |  {data[1]}          |
- |    CPF      |  {data[3]}    |
- ·-----------------------------·  
-  >>>> {data[5]}");
-                    Console.Write("\n Insert how mucha you wanna pass: ");
-                    int value = int.Parse(Console.ReadLine()) + int.Parse(data[5]);
-
-                    if (ConfirmTransation() == true && value > 0) {
-                        myStatement = int.Parse(myDt[5]) - value;
-                        myDt[5] = (myStatement).ToString();
-                        data[5] = (value + int.Parse(data[5])).ToString();
-                        }
-                    }
-                } 
-            }        
-        }        
-        private bool ConfirmTransation() {
             Console.Write("\n You confirm? Y/n: ");
             bool confirm = ((Console.ReadLine()).ToUpper() == "Y");
 
             return confirm;
         }
-
+    
     }
 }

@@ -12,8 +12,8 @@ namespace Bank {
             {"U", "dn78A0"}, {"V", "XkQ945"}, {"W", "4bGu10"}, {"X", "2J6z1r"}, {"Y", "47WvF3"}, {"Z", "g3w2K9"}, {"Ç", "20IajME91"} 
         };
 
-        public EncryptPass() {
-            Pass = passwordEncrypted(Console.ReadLine()); //nao ha acesso direto a senha
+        public EncryptPass(string clientPass) {
+            Pass = passwordEncrypted(clientPass); //nao ha acesso direto a senha
         }
         //metodo get para conseguirmos acessar a senha criptografada
         public string GetPassword() {
@@ -33,7 +33,7 @@ namespace Bank {
                     }
                 }
             }
-            return $"{string.Join("", newPass)}"; //retorno da senha criptografada
+            return string.Join("", newPass); //retorno da senha criptografada
         }
 
     }
