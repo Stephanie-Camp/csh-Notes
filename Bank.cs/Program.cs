@@ -28,7 +28,7 @@ namespace Bank {
                         string newName = Console.ReadLine();
 
                         Console.Write(" | Inform your CPF: ");
-                        ulong newCpf = ulong.Parse(Console.ReadLine());
+                        long newCpf = long.Parse(Console.ReadLine());
                         if ((newCpf.ToString()).Length != 11) 
                             Console.Write("\n Invalid CPF. \n Try again. \n");
 

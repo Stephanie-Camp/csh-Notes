@@ -8,7 +8,7 @@ namespace Bank {
         private string Pass;
         static private List<string[]> DataList = new List<string[]> ();
         private Account addData;
-        EncryptPass pass;
+        private EncryptPass pass;
         
         public BankATM () {}
 
@@ -67,7 +67,7 @@ namespace Bank {
             if (amountAtt < 1 )
                 Console.Write("\n Invalid.");
 
-            if (!(amountAtt < 1 )){
+            if (!(amountAtt < 1 )) {
                 Console.Write("Insert the account number to transfer: ");
                 string accTransfer = Console.ReadLine();
                 Console.Write("Insert the agency number to transfer: ");
@@ -75,26 +75,57 @@ namespace Bank {
                 
                 foreach (var data in DataList) {
 
-                    if (myDt[0] == accTransfer && myDt[1] == agTransfer){
+                    if (myDt[0] == accTransfer && myDt[1] == agTransfer) {
                         Console.WriteLine("\n Account already exist");
                         break;
-}
-                        if ((data[0] == accTransfer && data[1] == agTransfer) && (myDt[0] != accTransfer && myDt[1] != agTransfer)){
-                            Console.WriteLine(@$"  
-        ._____________________________.
-        |   Account   |  {data[0]}          |
-        |   Agency    |  {data[1]}          |
-        |    CPF      |  {data[3]}    |
-        ·-----------------------------·  
-        >>>> {data[5]}");
-                            Console.Write("\n Insert how mucha you wanna pass: ");
-                            int value = int.Parse(Console.ReadLine());
+                    }
+                    if ((data.Contains(accTransfer) && data.Contains(agTransfer)) && (myDt[0] != accTransfer && myDt[1] != agTransfer)) {
+                        Console.WriteLine(@$"  
+  ._____________________________.
+  |   Account   |  {data[0]}          |
+  |   Agency    |  {data[1]}          |
+  |    CPF      |  {data[3]}    |
+  ·-----------------------------·  
+    >>>> {data[5]}");
+                        Console.Write("\n Insert how mucha you wanna pass: ");
+                        int value = int.Parse(Console.ReadLine());
 
-                            if (value > 0 && value < amountAtt){
-                                addData.subTransation(value);
-                                data[5] = (value + int.Parse(data[5])).ToString();                
-                    }}
- }           }        
+                        if (value > 0 && value < amountAtt) {
+                            subTransation(value, myDt);
+                            data[5] = (value + int.Parse(data[5])).ToString();                
+                        }
+                    }
+                }        
+
+            }
+        }
+        public string subTransation(int valueSub, string[] myDt) {
+            int balance = 0;
+            if (ConfirmTransation() == true)
+                balance = int.Parse(myDt[5]) - valueSub;
+                return myDt[5] = (balance).ToString();
+
+            return myDt[5];
+        }
+        public string addTransation(int valueSub, string[] myDt) {
+            int balance = 0;
+            if (ConfirmTransation() == true)
+                balance = int.Parse(myDt[5]) + valueSub;
+                return myDt[5] = (balance).ToString();
+            
+            return myDt[5];
+        }
+        public bool ConfirmTransation() {
+
+            Console.Write("\n You confirm? Y/n: ");
+            bool confirm = ((Console.ReadLine()).ToUpper() == "Y");
+            
+            if(confirm == false)
+                Console.WriteLine(" \n Operation canceled.");
+        
+            return confirm;
+        }
+ 
 
     }
-}}
+}

@@ -3,7 +3,7 @@ namespace Bank {
 
         private string[] myDt = new string[] {};
         private int myStatement = 0;
-        private BankATM entryTransfer = new BankATM();
+        private BankATM entryTransation = new BankATM();
 
         public Account(string[] dtCli) { //construtor da classe
             myDt = dtCli;
@@ -27,7 +27,7 @@ namespace Bank {
                 if (opc == 2)
                     Deposit();
                 if (opc == 3)
-                    entryTransfer.Transfer(myStatement, myDt);
+                    entryTransation.Transfer(myStatement, myDt);
                 if (opc == 0)
                     break;
             }
@@ -42,7 +42,7 @@ namespace Bank {
                 int value = int.Parse(Console.ReadLine());
                 
                 if (value > 0 && value < myStatement)
-                    subTransation(value);
+                    myStatement = int.Parse(entryTransation.subTransation(value, myDt));
 
         }
         private void Deposit() {
@@ -54,31 +54,8 @@ namespace Bank {
                 Console.WriteLine("\n Invalid. ");
 
             if (!(myStatement < 1 ))
-                addTransation();
+                myStatement = int.Parse(entryTransation.addTransation(myStatement, myDt));
         }
-
-        public void subTransation(int valueSub) {
-
-            if (ConfirmTransation() == true)
-                myStatement = int.Parse(myDt[5]) - valueSub;
-                myDt[5] = (myStatement).ToString();
-        }
-        public void addTransation() {
-
-            if (ConfirmTransation() == true)
-                myStatement = int.Parse(myDt[5]) + myStatement;
-                myDt[5] = (myStatement).ToString();
-        }
-        public bool ConfirmTransation() {
-
-            Console.Write("\n You confirm? Y/n: ");
-            bool confirm = ((Console.ReadLine()).ToUpper() == "Y");
-            
-            if(confirm == false)
-                Console.WriteLine(" \n Operation canceled.");
-
-            return confirm;
-        }
-    
+  
     }
 }
