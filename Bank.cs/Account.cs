@@ -62,25 +62,20 @@ namespace Bank {
             if (ConfirmTransation() == true)
                 myStatement = int.Parse(myDt[5]) - valueSub;
                 myDt[5] = (myStatement).ToString();
-
-            if (!(ConfirmTransation() == true))
-                Console.WriteLine(" \n Operation canceled.");
-
         }
         public void addTransation() {
 
             if (ConfirmTransation() == true)
                 myStatement = int.Parse(myDt[5]) + myStatement;
                 myDt[5] = (myStatement).ToString();
-
-            if (!(ConfirmTransation() == true))
-                Console.WriteLine(" \n Operation canceled.");
-
         }
         public bool ConfirmTransation() {
 
             Console.Write("\n You confirm? Y/n: ");
             bool confirm = ((Console.ReadLine()).ToUpper() == "Y");
+            
+            if(confirm == false)
+                Console.WriteLine(" \n Operation canceled.");
 
             return confirm;
         }
